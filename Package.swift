@@ -13,7 +13,7 @@ let package = Package(
         .library(name: "AEPIdentity", targets: ["AEPIdentity"]),
         .library(name: "AEPLifecycle", targets: ["AEPLifecycle"]),
         .library(name: "AEPServices", targets: ["AEPServices"]),
-        .library(name: "AEPSignal", targets: ["AEPSignal"])
+        .library(name: "AEPSignal", targets: ["AEPSignal"]),
         .library(name: "AEPMedia", targets: ["AEPMedia"]),
         .library(name: "AEPAnalytics", targets: ["AEPAnalytics"]),
         .library(name: "AEPAssurance", targets: ["AEPAssurance"])
