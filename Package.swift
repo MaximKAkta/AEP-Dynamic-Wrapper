@@ -8,18 +8,28 @@ let package = Package(
         .tvOS(.v12)
     ],
     products: [
-        .library(name: "AEPCore", targets: ["AEPCore"]),
-        .library(name: "AEPRulesEngine", targets: ["AEPRulesEngine"]),
-        .library(name: "AEPIdentity", targets: ["AEPIdentity"]),
-        .library(name: "AEPLifecycle", targets: ["AEPLifecycle"]),
-        .library(name: "AEPServices", targets: ["AEPServices"]),
-        .library(name: "AEPSignal", targets: ["AEPSignal"]),
-        .library(name: "AEPMedia", targets: ["AEPMedia"]),
-        .library(name: "AEPAnalytics", targets: ["AEPAnalytics"]),
-        .library(name: "AEPAssurance", targets: ["AEPAssurance"])
+        .library(name: "AEPDynamic", targets: ["AEPDynamicWrapper"])
     ],
     dependencies: [],
     targets: [
+        // Wrapper target — links all AEP binary frameworks
+        .target(
+            name: "AEPDynamicWrapper",
+            dependencies: [
+                "AEPCore",
+                "AEPRulesEngine",
+                "AEPIdentity",
+                "AEPLifecycle",
+                "AEPServices",
+                "AEPSignal",
+                "AEPMedia",
+                "AEPAnalytics",
+                .target(name: "AEPAssurance", condition: .when(platforms: [.iOS]))
+            ],
+            path: "Sources/AEPDynamicWrapper",
+            publicHeadersPath: "include"
+        ),
+        // Binary targets (iOS + tvOS)
         .binaryTarget(
             name: "AEPCore",
             url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPCore-5.5.0.xcframework.zip",
@@ -60,6 +70,7 @@ let package = Package(
             url: "https://github.com/adobe/aepsdk-analytics-ios/releases/download/5.0.2/AEPAnalytics-5.0.2.xcframework.zip",
             checksum: "88dc7a20d63ce836c241b3d9ab2c2f1a1292d00103f445518127fccdc2d57c40"
         ),
+        // iOS only
         .binaryTarget(
             name: "AEPAssurance",
             url: "https://github.com/adobe/aepsdk-assurance-ios/releases/download/5.0.3/AEPAssurance-5.0.3.xcframework.zip",
