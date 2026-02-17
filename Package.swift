@@ -8,17 +8,15 @@ let package = Package(
         .tvOS(.v12)
     ],
     products: [
-        .library(name: "AEPCoreDynamic", targets: [
-            "AEPCore",
-            "AEPIdentity",
-            "AEPLifecycle",
-            "AEPServices",
-            "AEPSignal",
-            "AEPRulesEngine"
-        ]),
-        .library(name: "AEPMediaDynamic", targets: ["AEPMedia"]),
-        .library(name: "AEPAnalyticsDynamic", targets: ["AEPAnalytics"]),
-        .library(name: "AEPAssuranceDynamic", targets: ["AEPAssurance"])
+        .library(name: "AEPCore", targets: ["AEPCore"]),
+        .library(name: "AEPRulesEngine", targets: ["AEPRulesEngine"]),
+        .library(name: "AEPIdentity", targets: ["AEPIdentity"]),
+        .library(name: "AEPLifecycle", targets: ["AEPLifecycle"]),
+        .library(name: "AEPServices", targets: ["AEPServices"]),
+        .library(name: "AEPSignal", targets: ["AEPSignal"])
+        .library(name: "AEPMedia", targets: ["AEPMedia"]),
+        .library(name: "AEPAnalytics", targets: ["AEPAnalytics"]),
+        .library(name: "AEPAssurance", targets: ["AEPAssurance"])
     ],
     dependencies: [],
     targets: [
