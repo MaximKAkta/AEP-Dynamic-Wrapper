@@ -31,50 +31,50 @@ let package = Package(
         ),
         // Binary targets (iOS + tvOS)
         .binaryTarget(
-            name: "AEPCore",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPCore-5.5.0.xcframework.zip",
-            checksum: "aa4df29caba6811142ae688e17076bb74931919f567bffa71c143089884df256"
+        name: "AEPCore",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPCore-5.5.0.xcframework.zip",
+        checksum: "dfa7c13ecec62d1fbd87d6c04b64421001545b2347d74a3f477a850caed49859"
         ),
         .binaryTarget(
-            name: "AEPIdentity",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPIdentity-5.5.0.xcframework.zip",
-            checksum: "4d482f5d3006ef79d8eca709bc7831ddc0d54bb1fc27b498031f101a593b692b"
+        name: "AEPIdentity",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPIdentity-5.5.0.xcframework.zip",
+        checksum: "f8c79266a58e896556d896485a38c6c0d8521b6d2d0c7ffd274b4bf7ba0a14bd"
         ),
         .binaryTarget(
-            name: "AEPLifecycle",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPLifecycle-5.5.0.xcframework.zip",
-            checksum: "d637ce72d1b2ad51362e5ad7f14b5c124ae6999e34309e5308516e4dfdc0ce5e"
+        name: "AEPLifecycle",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPLifecycle-5.5.0.xcframework.zip",
+        checksum: "ba8f40d19a2dd4a20c1a702f69e01f80f48cc6c8837a0d016edb7b8b02e90ae4"
         ),
         .binaryTarget(
-            name: "AEPRulesEngine",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPRulesEngine-5.0.0.xcframework.zip",
-            checksum: "56727e40e1295d5cc3e2ca42d1a2727b0596358f610100ba5a85e6e67096a680"
+        name: "AEPRulesEngine",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPRulesEngine-5.0.0.xcframework.zip",
+        checksum: "e005c2189fef42c39e909ba49d635683495ba36bb9e9da078f0a0f9ac858f3ec"
         ),
         .binaryTarget(
-            name: "AEPServices",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPServices-5.5.0.xcframework.zip",
-            checksum: "e7782a51187e405a80b6d02a9de234754b86c4117ecdb8dc5b7bbd674527317a"
+        name: "AEPServices",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPServices-5.5.0.xcframework.zip",
+        checksum: "fee68845f71328408e78e64e4e29c3b529cf35f1f5d670e9d5350630a4009104"
         ),
         .binaryTarget(
-            name: "AEPSignal",
-            url: "https://github.com/adobe/aepsdk-core-ios/releases/download/5.5.0/AEPSignal-5.5.0.xcframework.zip",
-            checksum: "facb7821133f0349c4fa870225e92fc4bb3026ee0bc12d1301c219bac952013f"
+        name: "AEPSignal",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPSignal-5.5.0.xcframework.zip",
+        checksum: "a8bf6701fe0b5e76526629be5b618c07a5f09718d0b841a921fe508a33a56670"
         ),
         .binaryTarget(
-            name: "AEPMedia",
-            url: "https://github.com/adobe/aepsdk-media-ios/releases/download/5.0.1/AEPMedia-5.0.1.xcframework.zip",
-            checksum: "203abbf2c8ce9d9f007dacd397467bae7e022f5b67b069a4c71008ef641a05d4"
+        name: "AEPMedia",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPMedia-5.0.1.xcframework.zip",
+        checksum: "1dd232afe35207f82d4e6e7e28e3114ae9a3f71b90f417b1579c56a4fbe75ade"
         ),
         .binaryTarget(
-            name: "AEPAnalytics",
-            url: "https://github.com/adobe/aepsdk-analytics-ios/releases/download/5.0.2/AEPAnalytics-5.0.2.xcframework.zip",
-            checksum: "88dc7a20d63ce836c241b3d9ab2c2f1a1292d00103f445518127fccdc2d57c40"
+        name: "AEPAnalytics",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPAnalytics-5.0.2.xcframework.zip",
+        checksum: "fd64821532649409fd42b2417f33cb735a80053972dfbb30579fb619b55da788"
         ),
         // iOS only
         .binaryTarget(
-            name: "AEPAssurance",
-            url: "https://github.com/adobe/aepsdk-assurance-ios/releases/download/5.0.3/AEPAssurance-5.0.3.xcframework.zip",
-            checksum: "a699d18aed81a7807886db232dbbe72d39ad58c2b2bec7dd0561de4202e8c41b"
+        name: "AEPAssurance",
+        url: "https://github.com/MaximKAkta/AEP-Dynamic-Wrapper/raw/main/AEPAssurance-5.0.3.xcframework.zip",
+        checksum: "412597945486c3c3cd01138eb7ee7939cca2222f61987375bc181fcae92f0c53"
         )
     ]
 )
